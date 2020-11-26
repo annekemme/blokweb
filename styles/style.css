@@ -3,3 +3,18 @@
   box-sizing:border-box;  
 }
 
+ul li {
+list-style-type: none;
+}
+
+img{
+	margin: auto;
+	display: block;
+	height: 80vh;
+	margin-top: 6vh;
+}
+
+h1 {
+	font-family:"montserrat", sans-serif;
+	font-size:50px;
+}

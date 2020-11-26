@@ -38,20 +38,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Met HTML werken gaat mij nog goed af. Ik merk dat ik het lastig vind om CSS al toe te voegen en vooral hoe ik goed de afbeeldingen naar elkaar krijg. 
 
 **Screenshot(s):**
-
+<img src="images/screenshot1" alt="Screenshot hoe ver je bent">
+<img src="images/screenshot" alt="Screenshot hoe ver je bent">
 -screenshot(s) van hoe ver je bent met korte uitleg-
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| student 1 Zoe     | student 2 Maryem   | student 3 Anne   					| student 4 Sem      		  |
+| Mijn website      | Mijn website       | Mijn website 	     				| Mijn website            	  |
+| Breakpoint  		| Slider             | Waar kan ik het beste mee beginnen   | Menu en nav        		  |
+| Product slide	    | Uitklappen van menu| Zoekbalk en animatie menu 			| Automatische letter slider  |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
