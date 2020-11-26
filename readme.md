@@ -41,8 +41,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Met HTML werken gaat mij nog goed af. Ik merk dat ik het lastig vind om CSS al toe te voegen en vooral hoe ik goed de afbeeldingen naar elkaar krijg. 
 
 **Screenshot(s):**
-<img src="images/screenshot1.png" alt="Screenshot hoe ver je bent">
-<img src="images/screenshot.png" alt="Screenshot hoe ver je bent">
+<img src="images/screenshot1.png" width="375px alt="Screenshot hoe ver je bent">
+<img src="images/screenshot.png" width="375px alt="Screenshot hoe ver je bent">
 -screenshot(s) van hoe ver je bent met korte uitleg-
 
 ### Agenda voor meeting
