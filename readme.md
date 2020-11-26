@@ -41,19 +41,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Met HTML werken gaat mij nog goed af. Ik merk dat ik het lastig vind om CSS al toe te voegen en vooral hoe ik goed de afbeeldingen naar elkaar krijg. 
 
 **Screenshot(s):**
-<img src="images/screenshot1" alt="Screenshot hoe ver je bent">
-<img src="images/screenshot" alt="Screenshot hoe ver je bent">
+<img src="images/screenshot1.png" alt="Screenshot hoe ver je bent">
+<img src="images/screenshot.png" alt="Screenshot hoe ver je bent">
 -screenshot(s) van hoe ver je bent met korte uitleg-
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1 Zoe     | student 2 Maryem   | student 3 Anne   					| student 4 Sem      		  |
-| Mijn website      | Mijn website       | Mijn website 	     				| Mijn website            	  |
-| Breakpoint  		| Slider             | Waar kan ik het beste mee beginnen   | Menu en nav        		  |
-| Product slide	    | Uitklappen van menu| Zoekbalk en animatie menu 			| Automatische letter slider  |
-| ...            | ...                | ...          | ...              |
+| Student 1 - Zoe | Student 2 - Maryem | Student 3 - Anne | Student 4 - Sem |
+| ---            | ---                | ---          | ---              |
+| Mijn website  | Mijn website  | Mijn website  | Mijn website  |
+| Breakpoint | Slider | Waar kan ik het best mee beginnen | Menu en nav |
+| Product slider | Uitklappen van menu | Zoekbalk en animatie menu  | Automatische letter slider
 
 ### Verslag van meeting
 
@@ -78,8 +78,8 @@ Met HTML werken gaat mij nog goed af. Ik merk dat ik het lastig vind om CSS al t
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/albertheijn.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/albertheijn.PNG" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/albertheijn1.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/albertheijn1.PNG" width="375px" alt="omschrijving van de pagina">
