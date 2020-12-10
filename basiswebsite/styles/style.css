@@ -1,0 +1,120 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+ul li {
+list-style-type: none;
+}
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.zoekbalk { 
+	color:#838383;
+	background: #F0F4F7;
+	font: HamburgTS;
+	padding: 11px 16px;
+ }
+body {
+	font-family: HamburgTS,Arial,Helvetica,sans-serif;
+    color: #303030;
+}
+.appie {
+	display: center;
+	width:10vh;
+  	/*margin-left: auto;
+	margin-right: auto;
+	width: 50vh;*/
+	/*position: center;*/
+	/*width: 50vh;*/
+	/*height: 20vh;*/
+	/*margin: auto;
+	display: block;
+	height: 8vh;
+	margin-top: 6vh;*/
+}
+.container {
+	border:3px solid black;
+}
+.hoofdcontainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1em;
+}
+
+h1 {
+	font-family:"montserrat", sans-serif;
+	font-size:50px;
+}
+
+button {
+  /* zodat de kinderen in de button gepositioneerd worden */
+  position:relative;
+  
+  /* maten, vormgeving  en co van de button */
+  width:3em; height:3em;
+  margin:0; padding:0;
+  font-size:1em;
+  appearance:none;
+  border:none;
+  background-color:white;
+  
+  /* hiermee staan de drie streepjes om te beginnen in het midden */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* de streepjes */
+button span {
+  /* hiermee worden de span uit de normale flow gehaald */
+  /* in combinatie met flex van de button staan ze dan over elkaar heen */
+  position:absolute;
+  /* maten en een kleurtje */
+  width:2em; height: 2px;
+  background-color:Black;
+  
+  /* zodat de beweging op de terugweg .5 seconde duurt */
+  /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
+  /* https://matthewlein.com/tools/ceaser */
+  transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+button span:first-of-type {
+  /* het eerste streepje vanuit het midden een beetje omhoog */
+  transform:translatey(-5px);  
+}
+button span:last-of-type {
+  /* het laatste streepje vanuit het midden een beetje omlaag */
+  transform:translatey(5px);  
+}
+
+/* met JS wordt de class 'menuOpen' aan de body toegevoegd */
+/* die kan gebruikt worden om de button aan te passen */
+
+body.menuOpen button span {
+  /* alle streepjes worden rood */
+  background-color:Crimson;
+  /* zodat de beweging op de heenweg .5 seconde duurt */
+  /* met ease-out begint de beweging snel en eindigt langzaam */
+  transition:.5s ease-out;
+}
+
+body.menuOpen button span:first-of-type {
+  /* het eerste streepje gaat terug naar het midden */
+  /* en draait ondertussen 45 graden */
+  transform:translatey(0) rotate(45deg);  
+}
+
+body.menuOpen button span:nth-of-type(2) {
+  /* het tweede streepje wordt doorzichtig */
+  opacity:0;
+}
+
+body.menuOpen button span:last-of-type {
+  /* het laatste streepje gaat terug naar het midden */
+  /* en draait ondertussen -45 graden */
+  transform:translatey(0) rotate(-45deg);  
+}
