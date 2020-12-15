@@ -1,4 +1,12 @@
 /* CSS Document */
+/* global styles */
+body {
+	font-family: HamburgTS,Arial,Helvetica,sans-serif;
+    color: #303030;
+    margin: 0px;
+}
+
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -7,14 +15,276 @@ ul li {
 list-style-type: none;
 }
 
-img{
-	margin: auto;
-	display: block;
-	height: 80vh;
-	margin-top: 6vh;
+.hoofdcontainer {
+	padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1488px;
+    position: relative;
 }
 
+/* einde global styles */ 
+
+/* begin header */
+
+header {
+	justify-content: center;
+	align-items: center; 
+}
+
+/* begin menu */
+
+.menu{
+	width: 100%;
+	display: flex;
+
+}
+
+/* begin hambuger menu */
+
+.hambuger {
+	flex-basis: 33.333333%;
+	display: flex;
+}
+
+.hambuger button {
+  width:3em;
+  font-size:1em;
+  border:none;
+  background-color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* einde hambuger menu */
+
+/* begin logo */
+
+.logo {
+	flex-basis: 33.333333%;
+}
+
+.logo svg{
+
+	width: 36px;
+	height: 36px;
+}
+
+a.ah_logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* einde logo */
+
+/* begin winkelmandje */
+
+.Winkelmandje {
+	flex-basis: 33.333333%;	
+	display: flex;
+}
+
+.Winkelmandje svg { 
+	width: 28px;
+	height: 28px; 
+	color: #00ade6;
+    fill: currentColor;
+}
+
+.Winkelmandje a {
+	display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+/* einde winkelmandje */
+
+/* einde menu */
+
+.zoekbalk { 
+	width: 100%;
+	padding: 16px;
+ }
+
+ .zoekbalk input{
+ 	position: relative;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #f0f4f7;
+    border-color: #f0f4f7;
+    color: #838383;
+    text-align: left;
+    -webkit-transition: none;
+    transition: none;
+    padding: 11px 16px;
+    border: none;  
+ }
+
+.zoekbalk input:hover {
+    border: #00ade6 1px solid ;
+    padding: 10px 15px;
+}
+
+ /*  Dit is de css voor de zoekbalk.*/
+
+/* einde header */
+
+/* begin content */
+/* begin categorien */
+
+.categorie {
+	padding: 12px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.artikel {
+	width: 50%;
+	margin: 0;
+    padding: 0 12px 24px;
+}
+
+.artikel article{
+	align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+    color:;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 16px 0 rgba(0,0,0,.04), 0 1px 4px 0 rgba(0,0,0,.16);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.04), 0 1px 4px 0 rgba(0,0,0,.16);
+    cursor: pointer;
+    padding: 16px 4px;	
+    height: 100%;
+}
+
+.artikel article a {
+	text-decoration: none; 
+	color:#303030;
+}
+
+/* begin afbeelding artikel */
+
+.afbeelding img {
+	width: 100%;
+    max-width: 144px;
+    max-height: 100%;
+}
+
+/* einde afbeelding artikel */
+
+/* begin titel artikel */
+
+.titel {
+	    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 24px 4px 8px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 36px;
+    overflow: hidden;
+    width: 100%;
+    font-weight: 300;
+}
+
+.titel a {
+	    color: #303030;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .3px;
+    width: 100%;
+}
+
+/* einde titel artikel */
+
+@media only screen and (min-width: 768px) {
+.artikel {
+	width: 33.333333%;
+	margin: 0;
+    padding: 0 12px 24px;	
+}
+}
+
+/* einde categorien */
+
+
+
+
+
+/*einde content */
+
+
+/* later veranderen */
+/* Button van de afbeelding en tekst gemaakt*/
+button {
+	 background-color:#FF6600;
+        color:#FFFFFF;
+}
+
+}
 h1 {
 	font-family:"montserrat", sans-serif;
 	font-size:50px;
+}
+
+footer {
+	background-color: #F5F5F5;
+}
+
+
+
+/* de streepjes */
+button span {
+  /* hiermee worden de span uit de normale flow gehaald */
+  /* in combinatie met flex van de button staan ze dan over elkaar heen */
+  position:absolute;
+  /* maten en een kleurtje */
+  width:2em; height: 2px;
+  background-color:Black;
+  
+  /* zodat de beweging op de terugweg .5 seconde duurt */
+  /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
+  /* https://matthewlein.com/tools/ceaser */
+  transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+button span:first-of-type {
+  /* het eerste streepje vanuit het midden een beetje omhoog */
+  transform:translatey(-5px);  
+}
+button span:last-of-type {
+  /* het laatste streepje vanuit het midden een beetje omlaag */
+  transform:translatey(5px);  
+}
+
+/* met JS wordt de class 'menuOpen' aan de body toegevoegd */
+/* die kan gebruikt worden om de button aan te passen */
+
+body.menuOpen button span {
+  /* alle streepjes worden rood */
+  background-color:Crimson;
+  /* zodat de beweging op de heenweg .5 seconde duurt */
+  /* met ease-out begint de beweging snel en eindigt langzaam */
+  transition:.5s ease-out;
+}
+
+body.menuOpen button span:first-of-type {
+  /* het eerste streepje gaat terug naar het midden */
+  /* en draait ondertussen 45 graden */
+  transform:translatey(0) rotate(45deg);  
+}
+
+body.menuOpen button span:nth-of-type(2) {
+  /* het tweede streepje wordt doorzichtig */
+  opacity:0;
+}
+
+body.menuOpen button span:last-of-type {
+  /* het laatste streepje gaat terug naar het midden */
+  /* en draait ondertussen -45 graden */
+  transform:translatey(0) rotate(-45deg);  
 }

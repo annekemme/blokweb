@@ -30,8 +30,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik merk dat ik zeker achterloop. Ik had niet verwacht dat ik er zoveel moeite mee zou hebben. Ik ga een planning maken zodat ik volgende week en in de vakantie goed aan de slag ga. 
+
+**Screenshot(s):**
+<img src="images/Schermafbeelding 2020-12-10 om 14.35.53.png" width="375px" alt="Screenshot hoe ver je bent">
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
+
+### Agenda voor meeting
+
+| Student 1 - Zoe | Student 2 - Maryem | Student 3 - Anne | Student 4 - Sem |
+| ---            | ---                | ---          | ---              |
+| Elementen voor nav  | Menu/nav  | Tekst in afbeelding  | Paralex scrol in afbeelding  |
+| - | Content na nav | Div in goed container | Slider animatie |
+| - | Hoeveelheid h1 | Breakdownschets controleren  | Flexbox layout |
+| - | Hoeveelheid css | -  | - |
+| - | Bronnen | -  | -
 
 
 ## Voortgang 1 (week 3)
