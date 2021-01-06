@@ -82,9 +82,9 @@ Met HTML werken gaat mij nog goed af. Ik merk dat ik het lastig vind om CSS al t
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
-<img src="images/breakdownschets1.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/breakdownschets1.png" width="375px" alt="omschrijving van de pagina">
 
-<img src="images/breakdownschets2.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="images/breakdownschets2.png" width="375px" alt="omschrijving van de pagina">
 
 
 ## Intake (week 1)
