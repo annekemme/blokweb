@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles/style.css" rel="stylesheet">
+</head>
+<header id="head">
+		<nav class="menu">
+	<div class="hambuger">
+	<button class="toggle" onclick="hide()">
+	<div class="bars"><span class="barsspan bars_1"></span><span class="barsspan bars_2"></span><span class="barsspan bars_3"></span><span class="barsspan bars_4"></span>
+	<span class="text_menu">menu</span></div>
+	</button>
+	</div>
+	<div class="logo">
+	<a class="ah_logo" href="index.html" target="_blank">
+ 	<svg id="svg_ah-logo" viewBox="0 0 24 24"><path fill="#fff" d="M22.55 11.09L17.67 2A2.61 2.61 0 0016 .6a2.47 2.47 0 00-.7-.1 2.78 2.78 0 00-1.3.4L5 5.88a3 3 0 00-1.38 1.78l-2.41 8.39A2.55 2.55 0 003 19.33l14.25 4.05a2.41 2.41 0 003.16-1.76l2.35-8.26a3.07 3.07 0 00-.21-2.27z"></path><path fill="#00ade6" d="M21.63 11.57l-4.77-8.9a1.88 1.88 0 00-2.58-.76L5.54 6.78A2 2 0 004.61 8l-2.34 8.1a1.83 1.83 0 001.23 2.28l13.77 3.92a1.8 1.8 0 002.25-1.25l2.28-8a2.07 2.07 0 00-.17-1.48z"></path><path fill="#fff" d="M12.87 10.81c.77-1.11 1.48-2.22 2.79-2.22a2.25 2.25 0 012.25 2.24v6.55h-1.64v-6.2c0-.85-.69-.85-.69-.85-.56 0-1.57 1.38-2.7 2.92v4.13h-1.66v-1.91s-1.09 1.92-2.73 1.92C6.64 17.39 6 16.11 6 13.06S6.42 8.6 8.4 8.6c1.51 0 2.81 2.2 2.81 2.2V9.4l1.66-2.23s-.01 3.65 0 3.64zm-1.95 2.47s-1.51-2.95-2.49-2.95c-.76 0-.83.8-.83 2.73s.11 2.69.82 2.69c.97-.01 2.5-2.47 2.5-2.47z"></path></svg>
+	</a>
+	</div>	
+	<div class="Winkelmandje">
+	<a href="#"><svg id="svg_icon-mijnlijst" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 5a2 2 0 114 0h-4zM8 5H6.766a3 3 0 00-2.977 2.628l-1.5 12A3 3 0 005.266 23h13.468a3 3 0 002.977-3.372l-1.5-12A3 3 0 0017.234 5H16a4 4 0 00-8 0zM5.773 7.876A1 1 0 016.766 7h10.468a1 1 0 01.993.876l1.5 12A1 1 0 0118.734 21H5.266a1 1 0 01-.993-1.124l1.5-12z" clip-rule="evenodd"></path></svg>
+	</a>
+	</div>
+	</nav>
+	<nav class="navbar">
+    <ul>
+      <li><a class="menuLink" href="#"><span class="icon"><svg id="svg_icon-producten" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.4.8a1 1 0 00-1 1v6.386l-.107.107c-.2.2-.373.363-.544.525-.106.1-.21.2-.322.308-.268.26-.54.54-.774.862-.509.702-.753 1.493-.753 2.612v8.5c0 .952.748 1.7 1.7 1.7h6.293a8.848 8.848 0 01-1.764-2H4.9v-8.2c0-.78.157-1.14.373-1.438.129-.178.3-.36.547-.6l.27-.258c.188-.178.405-.384.618-.597l.4-.4A1 1 0 007.4 8.6V2.8h1.9v5.8a1 1 0 00.293.707l.4.4c.213.213.43.42.618.597l.27.258c.07.067.133.13.191.19a5.865 5.865 0 011.987-.747l-.012-.017a6.667 6.667 0 00-.774-.862c-.111-.108-.216-.207-.322-.307-.171-.163-.344-.326-.544-.526l-.107-.107V1.8a1 1 0 00-1-1H6.4zm10.115 9.16C17.223 9.191 18.141 9 18.9 9a1 1 0 110 2c-.441 0-.723.107-.915.316-.126.136-.275.382-.375.822a4.611 4.611 0 012.67.13c1.56.57 2.72 2.025 2.72 4.25 0 2.5-1.188 4.158-2.6 5.156C19.037 22.64 17.458 23 16.5 23c-.958 0-2.537-.361-3.9-1.326-1.412-.998-2.6-2.656-2.6-5.155 0-2.226 1.16-3.681 2.72-4.251a4.622 4.622 0 012.851-.081c.13-.937.44-1.681.944-2.228zM12 16.518c0-1.428.674-2.105 1.406-2.372.821-.3 1.82-.127 2.455.4a1 1 0 001.278 0c.635-.527 1.634-.7 2.455-.4.732.267 1.406.944 1.406 2.372 0 1.764-.799 2.847-1.755 3.523-1.004.71-2.175.958-2.745.958-.57 0-1.74-.248-2.745-.958-.956-.676-1.755-1.759-1.755-3.523z" clip-rule="evenodd"></path></svg></span><span class="tekst">Producten</span></a></li>
+      <li><a class="menuLink" href="#"><span class="icon"><svg id="svg_icon-bonus" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10.69 1.002a4.074 4.074 0 00-3.347 1.597l-5.697 7.405c-1.027 1.334-.81 3.265.514 4.316l8.855 7.025a3.03 3.03 0 004.29-.543l5.698-7.404a4.178 4.178 0 00.715-3.655l-.81-2.934 1.291-.325c.565-.142.91-.715.77-1.28a1.05 1.05 0 00-1.277-.767l-1.346.338-.371-1.342a3.038 3.038 0 00-2.834-2.24l-6.451-.191zm7.715 4.26l-.358-1.297a1.038 1.038 0 00-.965-.773L10.631 3a2.074 2.074 0 00-1.703.818l-5.697 7.404a1.104 1.104 0 00.172 1.53l8.855 7.025a1.03 1.03 0 001.463-.195l5.697-7.405a2.177 2.177 0 00.372-1.903l-.823-2.98-2.109.53a2.168 2.168 0 01-1.98 1.32 2.037 2.037 0 01-2.04-2.11c.032-1.166.996-2.11 2.154-2.11.66 0 1.242.307 1.614.789l1.8-.452z"></path></svg></span><span class="tekst">Bonus</span></a></li>
+      <li><a class="menuLink" href="#"><span class="icon"><svg id="svg_icon-recepten" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11 4a1 1 0 012 0h-2zm-2 .07V4a3 3 0 016 0v.07A7.004 7.004 0 0120.93 10h.97a1 1 0 110 2H21v6c0 2.752-2.248 5-5 5H8c-2.752 0-5-2.248-5-5v-6H2a1 1 0 110-2h1.07A7.005 7.005 0 019 4.07zM5.1 10h13.8A5.002 5.002 0 0014 6h-4a5.002 5.002 0 00-4.9 4zM5 12v6c0 1.648 1.352 3 3 3h8c1.648 0 3-1.352 3-3v-6H5z" clip-rule="evenodd"></path></svg></span><span class="tekst">Recepten</span></a></li>
+      <li><a class="menuLink" href="#"><span class="icon"><svg id="svg_icon-acties" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M14.917 2.974c-.283.012-.633.157-1.01.533-.235.235-.522.666-.75 1.2-.135.313-.235.63-.294.923.016.123.027.247.032.37h2.55c.084-.05.168-.106.249-.164.144-.103.249-.193.299-.243.377-.377.521-.727.533-1.01.01-.263-.086-.629-.533-1.076-.447-.447-.813-.544-1.076-.533zM11.85 2.91c.197-.307.413-.586.643-.816.623-.623 1.423-1.079 2.34-1.117.938-.04 1.821.364 2.574 1.117.753.753 1.156 1.637 1.117 2.574-.02.48-.154.926-.366 1.333H21.1c1.12 0 1.9.919 1.9 2v2c0 .507-.198.986-.507 1.342A1.85 1.85 0 0121.1 12h-.144v8c0 1.527-1.132 2.956-2.756 2.956H5.8c-1.624 0-2.756-1.429-2.756-2.956v-8H2.9C1.78 12 1 11.081 1 10V8c0-1.081.78-2 1.9-2h2.642a3.152 3.152 0 01-.366-1.333c-.04-.937.364-1.821 1.117-2.574C7.046 1.34 7.93.937 8.867.976c.917.038 1.717.494 2.34 1.117.23.23.447.509.643.816zM8.256 6a3.736 3.736 0 01-.25-.164 2.581 2.581 0 01-.299-.243c-.376-.377-.521-.727-.533-1.01-.01-.263.086-.629.533-1.076.447-.447.813-.544 1.076-.533.283.012.633.157 1.01.533.235.235.522.666.75 1.2.135.313.235.63.294.923a4.742 4.742 0 00-.032.37h-2.55zm-.279 2H11v2H3V8h4.977zm7.702 0H21v2h-8V8h2.679zM11 21.044V12H4.956v8c0 .673.468 1.044.844 1.044H11zM13 12v9.044h5.2c.376 0 .844-.371.844-1.044v-8H13z" clip-rule="evenodd"></path></svg></span><span class="tekst">Acties</span></a></li>
+    </ul>
+  </nav>
+
+ <div class="zoekbalk">
+	<button class="zoekbalk_input" type="button" aria-label="zoeken" data-testhook="navigation-searchinput">Waar ben je naar op zoek?<svg id="vergrootglas" viewBox="0 0 21 21"><path fill-rule="evenodd" d="M2 9a7 7 0 1114 0A7 7 0 012 9zm7-9a9 9 0 105.618 16.032l4.675 4.675a1 1 0 001.414-1.414l-4.675-4.675A9 9 0 009 0z" clip-rule="evenodd"></path></svg></button>
+</div>
+</header>
+<body>
+<div class="body">	
+<picture>
+	<h1 class="algemenevoorwaarde">Algemene voorwaarden</h1>
+	<img src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-core/sub-menus/core/001202012_001_20141009_algemene_voorwaarden.jpg/001202012_001_20141009_algemene_voorwaarden.jpg/ahonline%3AlargeSubMenuImage" class="banner" data-testhook="image">
+</picture>
+<a class="zakelijkevoorwaarde" href="#">Zakelijke voorwaarden</a>
+<article>
+	<h2>I: Algemene Voorwaarden Thuiswinkel</h2>
+	<p>Deze Algemene Voorwaarden van de Nederlandse Thuiswinkel Organisatie zijn tot stand gekomen in overleg met de Consumentenbond in het kader van de Coördinatiegroep Zelfreguleringsoverleg (CZ) van de Sociaal-Economische Raad en treden in werking per 1 juni 2014. <br>
+		<br>
+	Deze Algemene Voorwaarden zullen worden gebruikt door alle leden van de Nederlandse Thuiswinkel Organisatie met uitzondering van financiële diensten als bedoeld in de Wet Financieel Toezicht en voor zover deze diensten onder toezicht staan van de Autoriteit Financiële Markten.</p>
+	<h2>Inhoudsopgave</h2>
+	<ul>
+		<li>Artikel 1 - Definities</li>
+		<li>Artikel 2 - Identiteit van de ondernemer</li>
+		<li>Artikel 3 - Toepasselijkheid</li>
+		<li>Artikel 4 - Het aanbod</li>
+		<li>Artikel 5 - De overeenkomst</li>
+		<li>Artikel 6 - Herroepingsrecht</li>
+		<li>Artikel 7 - Verplichtingen van de consument tijdens de bedenktijd</li>
+		<li>Artikel 8 - Uitoefening van het herroepingsrecht door de consument en kosten daarvan</li>
+		<li>Artikel 9 - Verplichtingen van de ondernemer bij herroeping</li>
+		<li>Artikel 10 - Uitsluiting herroepingsrecht</li>
+		<li>Artikel 11 - De prijs</li>
+		<li>Artikel 12 - Nakoming en extra garantie</li>
+		<li>Artikel 13 - Levering en uitvoering</li>
+		<li>Artikel 14 - Duurtransacties: duur, opzegging en verlenging</li>
+		<li>Artikel 15 - Betaling</li>
+		<li>Artikel 16 - Klachtenregeling</li>
+		<li>Artikel 17 - Geschillen</li>
+		<li>Artikel 18 - Branchegarantie</li>
+		<li>Artikel 19 - Aanvullende of afwijkende bepalingen</li>
+		<li>Artikel 20 - Wijziging van de Algemene Voorwaarden Thuiswinkel</li>
+		<li>Bijlagen</li>
+	</ul>
+	<h2>1. Definities</h2>
+	<p>In deze voorwaarden wordt verstaan onder:</p>
+	<ul>
+		<li><p> 1. <strong>Aanvullende overeenkomst:</strong> een overeenkomst waarbij de consument producten, digitale inhoud en/of diensten verwerft in verband met een overeenkomst op afstand en deze zaken, digitale inhoud en/of diensten door de ondernemer worden geleverd of door een derde partij op basis van een afspraak tussen die derde en de ondernemer;</p></li>
+		<li><p> 2. <strong>Bedenktijd:</strong> de termijn waarbinnen de consument gebruik kan maken van het herroepingsrecht;</p></li>
+		<li><p> 3. <strong>Consument:</strong> de natuurlijke persoon die niet handelt voor doeleinden die verband houden met zijn handels-, bedrijfs-, ambachts- of beroepsactiviteit;</p></li>
+		<li><p> 4. <strong>Dag:</strong> kalenderdag;</p></li>
+		<li><p> 5. <strong>Digitale inhoud:</strong> gegevens die in digitale vorm geproduceerd en geleverd worden;</p></li>
+		<li><p> 6. <strong>Duurovereenkomst:</strong> een overeenkomst die strekt tot de regelmatige levering van zaken, diensten en/of digitale inhoud gedurende een bepaalde periode;</p></li>
+		<li><p> 7. <strong>Duurzame gegevensdrager:</strong> elk hulpmiddel - waaronder ook begrepen e-mail - dat de consument of ondernemer in staat stelt om informatie die aan hem persoonlijk is gericht, op te slaan op een manier die toekomstige raadpleging of gebruik gedurende een periode die is afgestemd op het doel waarvoor de informatie is bestemd, en die ongewijzigde reproductie van de opgeslagen informatie mogelijk maakt;</p></li>
+		<li><p> 8. <strong>Herroepingsrecht:</strong> de mogelijkheid van de consument om binnen de bedenktijd af te zien van de overeenkomst op afstand;</p></li>
+		<li><p> 9. <strong>Ondernemer:</strong> de natuurlijke of rechtspersoon die lid is van Thuiswinkel.org en producten, (toegang tot) digitale inhoud en/of diensten op afstand aan consumenten aanbiedt;</p></li>
+		<li><p> 10. <strong>Overeenkomst op afstand:</strong> een overeenkomst die tussen de ondernemer en de consument wordt gesloten in het kader van een georganiseerd systeem voor verkoop op afstand van producten, digitale inhoud en/of diensten, waarbij tot en met het sluiten van de overeenkomst uitsluitend of mede gebruik gemaakt wordt van ëën of meer technieken voor communicatie op afstand;</p></li>
+		<li><p> 11. <strong>Modelformulier voor herroeping:</strong> het in Bijlage I van deze voorwaarden opgenomen Europese modelformulier voor herroeping. Bijlage I hoeft niet ter beschikking te worden gesteld als de consument ter zake van zijn bestelling geen herroepingsrecht heeft;</p></li>
+		<li><p> 12. <strong>Techniek voor communicatie op afstand:</strong> middel dat kan worden gebruikt voor het sluiten van een overeenkomst, zonder dat consument en ondernemer gelijktijdig in dezelfde ruimte hoeven te zijn samengekomen.</p></li>
+	</ul>
+
+</article>
+</div>
+</body>
+<footer>
+<article>
+	<ul>
+		<li class="info">Boodschappen <img class="pijlnaarrechts" src="images/pijlbeneden.png" alt="pijnnaarrechts"></li>
+		<li>Allerhande <img src="images/pijlbeneden.png" alt="pijnnaarrechts"></li>
+		<li>Services <img src="images/pijlbeneden.png" alt="pijnnaarrechts"></li>
+		<li>Albert Heijn <img src="images/pijlbeneden.png" alt="pijnnaarrechts"></li>
+	</ul>
+</article>
+<div class="logo">
+	<a class="ah_logo" href="..html" target="_blank">
+ 	<svg id="svg_ah-logo" viewBox="0 0 24 24"><path fill="#fff" d="M22.55 11.09L17.67 2A2.61 2.61 0 0016 .6a2.47 2.47 0 00-.7-.1 2.78 2.78 0 00-1.3.4L5 5.88a3 3 0 00-1.38 1.78l-2.41 8.39A2.55 2.55 0 003 19.33l14.25 4.05a2.41 2.41 0 003.16-1.76l2.35-8.26a3.07 3.07 0 00-.21-2.27z"></path><path fill="#00ade6" d="M21.63 11.57l-4.77-8.9a1.88 1.88 0 00-2.58-.76L5.54 6.78A2 2 0 004.61 8l-2.34 8.1a1.83 1.83 0 001.23 2.28l13.77 3.92a1.8 1.8 0 002.25-1.25l2.28-8a2.07 2.07 0 00-.17-1.48z"></path><path fill="#fff" d="M12.87 10.81c.77-1.11 1.48-2.22 2.79-2.22a2.25 2.25 0 012.25 2.24v6.55h-1.64v-6.2c0-.85-.69-.85-.69-.85-.56 0-1.57 1.38-2.7 2.92v4.13h-1.66v-1.91s-1.09 1.92-2.73 1.92C6.64 17.39 6 16.11 6 13.06S6.42 8.6 8.4 8.6c1.51 0 2.81 2.2 2.81 2.2V9.4l1.66-2.23s-.01 3.65 0 3.64zm-1.95 2.47s-1.51-2.95-2.49-2.95c-.76 0-.83.8-.83 2.73s.11 2.69.82 2.69c.97-.01 2.5-2.47 2.5-2.47z"></path></svg></a>
+
+<div class="socialmedia">
+	<a class="facebook" href="#" target="_blank">
+		<svg id="svg facebook" viewbox="0 0 24 24"><path fill-rule="evenodd" d="M13.653 6.722c0-.9.093-1.378 1.476-1.378h1.849V2h-2.959c-3.552 0-4.804 1.667-4.804 4.489v2.167H7V12h2.215v10h4.433V12h2.96L17 8.656h-3.352l.005-1.934z" clip-rule="evenodd"></path></svg></a>
+	<a class="twitter" href="#" target="_blank">
+		<svg id="svg twitter" viewbox="0 0 24 24"><path fill-rule="evenodd" d="M7.92 21a12.68 12.68 0 004.923-.964 12.756 12.756 0 004.174-2.8 12.86 12.86 0 002.78-4.204c.642-1.572.967-3.257.957-4.957v-.591A9.113 9.113 0 0023 5.13c-.826.36-1.7.6-2.594.71a4.61 4.61 0 001.989-2.51 9.2 9.2 0 01-2.87 1.098 4.491 4.491 0 00-5.42-.89 4.538 4.538 0 00-1.98 2.13c-.411.91-.513 1.931-.29 2.905a12.762 12.762 0 01-5.152-1.378A12.85 12.85 0 012.53 3.828a4.57 4.57 0 00-.498 3.31 4.543 4.543 0 001.891 2.755 4.313 4.313 0 01-2.007-.572v.065a4.553 4.553 0 001.037 2.89c.67.812 1.6 1.364 2.63 1.56a4.462 4.462 0 01-2.036.083 4.55 4.55 0 001.606 2.259c.756.566 1.67.88 2.611.898a9.052 9.052 0 01-5.61 1.948A8.35 8.35 0 011 18.96 12.767 12.767 0 007.92 21z" clip-rule="evenodd"></path></svg></a>
+	<a class="instagram" href="#" target="_blank">
+		<svg id="svg_instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.865 12a5.135 5.135 0 1110.27 0 5.135 5.135 0 01-10.27 0zM12 15.333a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm6.539-8.671a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zM7.877 2.06c-1.064.049-1.791.218-2.427.465a4.902 4.902 0 00-1.771 1.153A4.902 4.902 0 002.525 5.45c-.247.636-.416 1.363-.465 2.427C2.012 8.944 2 9.284 2 12s.012 3.056.06 4.123c.049 1.064.218 1.791.465 2.427a4.903 4.903 0 001.154 1.772c.5.508 1.104.902 1.77 1.153.637.247 1.364.416 2.428.465 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c1.064-.049 1.791-.218 2.427-.465a5.113 5.113 0 002.925-2.925c.247-.636.416-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.049-1.064-.218-1.791-.465-2.427a4.902 4.902 0 00-1.153-1.772 4.902 4.902 0 00-1.772-1.153c-.636-.247-1.363-.416-2.427-.465C15.056 2.012 14.716 2 12 2s-3.056.012-4.123.06zm8.164 1.8c.975.045 1.504.208 1.857.344.434.16.827.416 1.15.749.332.322.587.715.748 1.15.137.352.3.881.344 1.856.048 1.055.058 1.37.058 4.041 0 2.67-.01 2.986-.058 4.041-.044.975-.207 1.505-.344 1.857a3.311 3.311 0 01-1.898 1.898c-.353.137-.882.3-1.857.344-1.054.048-1.37.058-4.041.058-2.67 0-2.986-.01-4.04-.058-.976-.044-1.505-.207-1.858-.344a3.098 3.098 0 01-1.15-.748 3.099 3.099 0 01-.748-1.15c-.137-.352-.3-.882-.344-1.857-.048-1.054-.058-1.37-.058-4.04 0-2.671.01-2.987.058-4.042.045-.975.207-1.504.344-1.857.16-.434.416-.827.749-1.15a3.098 3.098 0 011.15-.748c.352-.137.881-.3 1.856-.344 1.055-.048 1.37-.058 4.041-.058 2.67 0 2.986.01 4.041.058z" clip-rule="evenodd"></path></svg></a>
+	<a class="youtube" href="#" target="_blank">
+		<svg id="svg_youtube" viewbox=" 0 0 24 24"><path fill-rule="evenodd" d="M21.005 5.193c.6.69.795 2.258.795 2.258s.2 1.842.2 3.682v1.726c0 1.841-.2 3.682-.2 3.682s-.196 1.567-.795 2.258c-.685.816-1.445.9-1.875.948-.047.006-.09.01-.129.016C16.202 19.993 12 20 12 20s-5.2-.054-6.8-.229c-.076-.016-.168-.029-.272-.043-.507-.069-1.302-.178-1.934-.93-.599-.69-.794-2.257-.794-2.257S2 14.7 2 12.859v-1.726c0-1.84.2-3.682.2-3.682s.195-1.567.794-2.258c.687-.817 1.448-.9 1.877-.948L5 4.23C7.798 4 11.996 4 12.004 4c0 0 4.199 0 6.997.23l.128.015c.429.047 1.19.13 1.876.948zM9.935 8.56v6.392l5.403-3.185-5.404-3.207z" clip-rule="evenodd"></path></svg></a>
+	<a class="pinterest" href="#" target="_blank">
+		<svg id="svg_pinterest" viewbox=" 0 0 24 24"><path fill-rule="evenodd" d="M10.462 2.162c-.802.2-1.676.39-2.324.77-1.73 1.01-2.93 2.19-3.733 4.11-.13.31-.134.61-.229.96-.616 2.239.476 4.549 1.802 5.359.254.15.834.42 1.047.06.118-.2.09-.47.164-.7.047-.16.198-.45.164-.64-.06-.33-.41-.53-.557-.8-.3-.53-.314-1-.46-1.72l.034-.29c.044-.8.179-1.37.426-1.94.724-1.67 1.887-2.6 3.764-3.16.42-.13 1.606-.32 2.227-.19.37.06.742.13 1.112.19 1.345.42 2.324 1.2 2.848 2.42.328.76.424 2.22.197 3.19-.108.47-.091.86-.229 1.28-.51 1.55-1.257 2.98-2.947 3.38a1.897 1.897 0 01-2.226-1.12c-.076-.19-.206-.53-.13-.86.294-1.25.719-2.38 1.047-3.63.312-1.2-.28-2.14-1.211-2.36-1.158-.28-2.052.79-2.357 1.49-.243.56-.39 1.59-.197 2.33.06.24.345.87.295 1.09-.223.97-.477 2.01-.753 2.96-.287 1-.442 2.01-.72 2.97-.128.44-.123.91-.23 1.37v.67c-.095.43-.024 1.18.067 1.6.057.26-.035.599.097.789.003.15.02.18.066.26.41-.01.974-1.09 1.178-1.4.39-.6.75-1.25 1.048-1.95.268-.63.31-1.33.524-2.01.154-.49.374-1.06.425-1.59.118.29.426.5.655.66.72.52 1.959.99 3.306.68 1.524-.36 2.737-1.08 3.536-2.14.589-.78 1.033-1.69 1.375-2.71.168-.51.203-1.059.328-1.599.311-1.34-.104-2.95-.492-3.82-1.175-2.66-3.672-4.18-7.66-4.12-.425.05-.851.11-1.277.16z" clip-rule="evenodd"></path></svg></a>
+</div>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Zakelijke algemene voorwaarden</a></span></nav>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="index.html">Algemene voorwaarden</a></span></nav>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Bonusvoorwaarden</a></span></nav>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Privacybeleid</a></span></nav>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Cookiebeleid</a></span></nav>
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Over AH</a></span></nav>	
+	<nav class="navigatie">
+		<span class="navigatie_link">
+			<a href="#">Kwetsbaarheid melden</a></span></nav>
+</div>				
+</nav>													
+<div class="footer">
+	<nav class="nav footer">
+	<span class="typografie">
+<script src="scripts/script.js"></script>
+</footer>
