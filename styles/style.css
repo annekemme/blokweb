@@ -37,8 +37,23 @@ header {
 .menu{
 	width: 100%;
 	display: flex;
+	border-bottom: 1px solid rgba(205, 205, 205, .5);
+	    padding: 0 16px;
 
 }
+
+.menu:after{
+content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #cdcdcd;
+    opacity: .5;
+    bottom: 0;
+    }
 
 /* begin hambuger menu */
 
@@ -47,14 +62,121 @@ header {
 	display: flex;
 }
 
-.hambuger button {
-  width:3em;
-  font-size:1em;
-  border:none;
-  background-color:white;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.toggle{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 10px;
+    width: 44px;
+    color: inherit;
+}
+
+.bars{
+	height: 21px;
+    position: relative;
+    width: 24px;
+}
+
+span.barsspan {
+    background: black;
+    border-radius: 4px;
+    display: block;
+    height: 2px !important;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    width: 100%;
+    top: 3px;
+}
+
+span.bars_1{
+	top: 3px;
+}
+
+span.bars_2{
+	top: 9px;
+}
+
+span.bars_3{
+	top: 15px;
+}
+
+span.text_menu{
+	position: absolute;
+    color: #acacac;
+    top: 18px;
+    left: 0;
+    font-size: 10px;
+}
+
+
+.navbar {
+display: none;
+}
+
+.showClose span.bars_2 {
+     -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.showClose span.bars_3{
+	    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.showClose span.bars_1{
+	display: none;
+}
+
+.showClose span.bars_4{
+	display: none;
+}
+
+
+
+.navbar_show {
+  display: block;
+  position: absolute;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+  z-index: 1;
+}
+
+span.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+span.tekst{
+	 margin-left: 36px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.menuLink{
+    display: block;
+    color: black;
+    padding: 8px 12px;
+    margin: 0;
+    text-decoration: none;
+    position: relative;
 }
 
 /* einde hambuger menu */
@@ -63,6 +185,7 @@ header {
 
 .logo {
 	flex-basis: 33.333333%;
+	padding: 14px !important;
 }
 
 .logo svg{
@@ -76,6 +199,7 @@ a.ah_logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 /* einde logo */
@@ -106,9 +230,11 @@ a.ah_logo {
 .zoekbalk { 
 	width: 100%;
 	padding: 16px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
  }
 
- .zoekbalk input{
+ .zoekbalk_input{
  	position: relative;
     width: 100%;
     border-radius: 24px;
@@ -120,14 +246,34 @@ a.ah_logo {
     transition: none;
     padding: 11px 16px;
     border: none;  
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
  }
 
-.zoekbalk input:hover {
+
+.zoekbalk_input:hover {
     border: #00ade6 1px solid ;
     padding: 10px 15px;
 }
 
+ #vergrootglas {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    color: #595959;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#vergrootglas:hover{
+	right: 23px;
+}
  /*  Dit is de css voor de zoekbalk.*/
+
 
 /* einde header */
 
@@ -178,7 +324,7 @@ a.ah_logo {
 /* begin titel artikel */
 
 .titel {
-	    display: -webkit-box;
+	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 24px 4px 8px;
@@ -211,80 +357,197 @@ a.ah_logo {
 
 /* einde categorien */
 
+/* begin ons assortiment */
 
+.grid {
+	padding: 8px;
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 1488px;
+    position: relative;
+}
 
+.colunm{
+	position: relative;
+}
+.row {
+	max-width: none;
+	margin-right: -.5rem;
+    margin-left: -.5rem;
+}
+.alfabet {
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    overflow-x: auto;
+    padding: 0 0 16px;
+}
+.alfabet_letter {
+	min-width: 49px;
+	display: list-item;
+	color: #303030;	
+	margin-left: 8px;
+}
 
+#letter_A{
+	margin-left: 0px !important;
+}
+
+.alfabet_letter li {
+	margin-left: 8px;
+}
+
+.alfabet_letter a {
+	display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #303030;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 8px;
+    text-align: center;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    line-height: 1;
+}
+/* NOG NAKIJKEN!!!!!!
+
+.grid { 
+ }
+.row {
+	max-width: none; 
+	margin-right: -.5rem;
+    margin-left: -.5rem;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+}
+*/
 
 /*einde content */
 
-
-/* later veranderen */
-/* Button van de afbeelding en tekst gemaakt*/
-button {
-	 background-color:#FF6600;
-        color:#FFFFFF;
-}
-
-}
-h1 {
-	font-family:"montserrat", sans-serif;
-	font-size:50px;
-}
+/* begin footer */
 
 footer {
 	background-color: #F5F5F5;
+	width: 100%;
+	list-style-type: none;
+}
+
+article li { 
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	border-bottom: 1px solid #f3f0eb;
+    padding: 16px 0 8px;
+	 }
+
+img {
+	display: flex;
+	width: 40px;
+	box-sizing: border-box;
+	justify-content:space-around;
+}
+
+.grid_footer {
+	padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1488px;
+}
+
+.row_footer {
+	position: relative;
+	max-width: 624.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.column_footer {
+	padding: 12px;	
+	position: relative;
+	flex: 0 0 100%;
+    max-width: 100%;
 }
 
 
-
-/* de streepjes */
-button span {
-  /* hiermee worden de span uit de normale flow gehaald */
-  /* in combinatie met flex van de button staan ze dan over elkaar heen */
-  position:absolute;
-  /* maten en een kleurtje */
-  width:2em; height: 2px;
-  background-color:Black;
-  
-  /* zodat de beweging op de terugweg .5 seconde duurt */
-  /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
-  /* https://matthewlein.com/tools/ceaser */
-  transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+.lijst {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    cursor: pointer;
+    font-weight: 700;
 }
 
-button span:first-of-type {
-  /* het eerste streepje vanuit het midden een beetje omhoog */
-  transform:translatey(-5px);  
-}
-button span:last-of-type {
-  /* het laatste streepje vanuit het midden een beetje omlaag */
-  transform:translatey(5px);  
+.socialmedia {
+	text-align:center;
+	padding:15px 10px;
+	justify-content: space-between;
+	margin:25px 0;
 }
 
-/* met JS wordt de class 'menuOpen' aan de body toegevoegd */
-/* die kan gebruikt worden om de button aan te passen */
-
-body.menuOpen button span {
-  /* alle streepjes worden rood */
-  background-color:Crimson;
-  /* zodat de beweging op de heenweg .5 seconde duurt */
-  /* met ease-out begint de beweging snel en eindigt langzaam */
-  transition:.5s ease-out;
+.navigatie {
+	padding:12px;
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 1488px;
+    position:relative;
+    display:block;
+    text-align:center;
+    
 }
 
-body.menuOpen button span:first-of-type {
-  /* het eerste streepje gaat terug naar het midden */
-  /* en draait ondertussen 45 graden */
-  transform:translatey(0) rotate(45deg);  
+.navigatie_link {
+	color:#303030;
+    text-decoration:none;
+    text-decoration-color:none;
+    position:relative;
 }
 
-body.menuOpen button span:nth-of-type(2) {
-  /* het tweede streepje wordt doorzichtig */
-  opacity:0;
+a { color:#303030;
+    text-decoration:none;
+   
+}
+/* einde footer */
+
+/* Begin css algemene voorwaarde */
+
+.zakelijkevoorwaarde {
+	padding: 24px 0px;
+	display: inline-block;
 }
 
-body.menuOpen button span:last-of-type {
-  /* het laatste streepje gaat terug naar het midden */
-  /* en draait ondertussen -45 graden */
-  transform:translatey(0) rotate(-45deg);  
+.body {
+	padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1488px;
+    position: relative
 }
+
+.algemenevoorwaarde{
+	position: absolute;
+	top:24px;
+	left: 24px;
+	padding-right:24px;
+	color:#fff;
+	text-shadow: rgba(0,0,0,.5);
+	font-size:24px;
+}
+
+.banner {
+	width: 100%;
+    height: 100%;
+    object-position: center right;
+    background-position: 0 100%;
+    object-fit: cover;
+}
+/* Einde css algemene voorwaarde */
+
