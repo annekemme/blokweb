@@ -4,13 +4,8 @@
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
-
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
-
-
+1. https://www.ah.nl/
 
 ## Eindgesprek (week 7/8)
 
@@ -22,6 +17,8 @@ Uiteindelijk ben ik heel blij met het eindresulaat. Wanneer ik er echt voor ga z
 
 -screenshot(s) van je eindresultaat-
 
+<img src="images/httpsannekemme.github.ioblokweb.pdf" width="375px" alt="Screenshot eindresultaat">
+<img src="images/httpsannekemme.github.ioblokwebalgemenevoorwaarden.html.pdf" width="375px" alt="Screenshot eindresultaat">
 
 
 ## Voortgang 3 (week 6)
